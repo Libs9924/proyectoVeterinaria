@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareVet - Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #336699;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #336699;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #285682;
+        }
+        .profile-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .profile-details, .profile-picture {
+            background-color: #d9eaf7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        .profile-details p {
+            margin: 10px 0;
+            background-color: #a1a1a1;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .profile-details input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .profile-picture img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .history, .edit-button {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #d9eaf7;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .edit-button {
+            text-align: center;
+        }
+        .edit-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #336699;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .edit-button a:hover {
+            background-color: #285682;
+        }
+        .history h3 {
+            background-color: #336699;
+            color: white;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+        .history-content {
+            background-color: #a1a1a1;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CareVet</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Servicios</a>
+        <a href="#">Citas</a>
+        <a href="#">Perfil</a>
+        <a href="#">Contactos</a>
+    </div>
+    <div class="profile-content">
+        <div class="profile-details">
+            <form>
+                <p>Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre"></p>
+                <p>Apellido: <input type="text" name="apellido" placeholder="Ingrese su apellido"></p>
+                <p>Correo: <input type="email" name="correo" placeholder="Ingrese su correo"></p>
+                <p>Teléfono: <input type="tel" name="telefono" placeholder="Ingrese su teléfono"></p>
+                <p>Dirección: <input type="text" name="direccion" placeholder="Ingrese su dirección"></p>
+            </form>
+        </div>
+        <div class="profile-picture">
+            <img src="imagenes/fotoDePerfil.png" alt="Foto de perfil">
+        </div>
+    </div>
+    <div class="history">
+        <h3>Historial de servicios</h3>
+        <div class="history-content">
+            <!-- Aquí va el contenido del historial de servicios -->
+        </div>
+    </div>
+    <div class="edit-button">
+        <a href="#">Editar Perfil</a>
+    </div>
+</body>
+</html>

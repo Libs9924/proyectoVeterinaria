@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareVet - Servicios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #336699;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #336699;
+            padding: 10px;
+        }
+        .nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            background-color: #285682;
+        }
+        .service-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .service-content .description {
+            background-color: #d9eaf7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            text-align: center;
+        }
+        .service-content .details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .service-content .details img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .service-content .details .info {
+            background-color: #d9eaf7;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        .service-content .details .info p {
+            margin: 10px 0;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #336699;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button-container a:hover {
+            background-color: #285682;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CareVet</h1>
+    </div>
+    <div class="nav">
+        <a href="#">Servicios</a>
+        <a href="#">Citas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="#">Contactos</a>
+    </div>
+    <div class="service-content">
+        <div class="description">
+            <h2>Vacunación</h2>
+            <p>La vacunación es fundamental para proteger a tu mascota contra diversas enfermedades. Ofrecemos una variedad de vacunas para diferentes especies y edades. Nuestro equipo se asegurará de que tu mascota reciba las vacunas necesarias en el momento adecuado.</p>
+        </div>
+        <div class="details">
+            <img src="https://via.placeholder.com/150" alt="Veterinario vacunando a una mascota">
+            <div class="info">
+                <p>Incluye:</p>
+                <ul>
+                    <li>Examen físico completo</li>
+                    <li>Evaluación del peso y condición corporal</li>
+                    <li>Recomendaciones nutricionales</li>
+                    <li>Respuestas a todas tus preguntas</li>
+                </ul>
+                <p><strong>Precio:</strong> $50.00</p>
+                <p><strong>Duración:</strong> 30 minutos</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="#">Agendar una Cita</a>
+        </div>
+    </div>
+</body>
+</html>
+

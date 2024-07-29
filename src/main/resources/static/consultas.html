@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareVet - Consultas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3a506b;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3a506b;
+            padding: 10px 0;
+            position: relative;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            position: relative;
+            display: inline-block;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        nav ul ul li {
+            display: block;
+            white-space: nowrap;
+        }
+        nav ul ul li a {
+            color: #000000;
+            padding: 10px 15px;
+        }
+        nav ul ul li a:hover {
+            background-color: #dddddd;
+        }
+        nav ul li:hover > ul {
+            display: block;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .section {
+            background-color: #6d8299;
+            color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .info-box {
+            background-color: #3a506b;
+            color: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            text-align: left;
+            max-width: 300px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+        }
+        .cta-button {
+            background-color: #00a0dc;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #3a506b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .testimonials, .faq {
+            background-color: #eeeeee;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+        .testimonials blockquote {
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo.png" alt="CareVet Logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Servicios</a>
+                <ul>
+                    <li><a href="#">Consultas Generales</a></li>
+                    <li><a href="vacunacion.html">Vacunación</a></li>
+                    <li><a href="#">Cirugías</a></li>
+                    <li><a href="#">Emergencias</a></li>
+                    <li><a href="#">Diagnósticos</a></li>
+                    <li><a href="#">Cuidado Preventivo</a></li>
+                    <li><a href="#">Terapias Especializadas</a></li>
+                    <li><a href="#">Hospitalización</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Citas</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="section">
+            Nuestras consultas están diseñadas para asegurar la salud y el bienestar de tu mascota.
+            Durante la consulta, nuestros veterinarios realizarán un chequeo completo y responderán a todas tus preguntas.
+        </div>
+
+        <img src="imagenes/consultaVeterinaria.png" alt="Consulta Veterinaria">
+
+        <div class="section">
+            Precio: $50.00<br>
+            Duración: 30 minutos
+        </div>
+
+        <div class="info-box">
+            <h3>Incluye:</h3>
+            <ul>
+                <li>Examen físico completo</li>
+                <li>Evaluación del peso y condición corporal</li>
+                <li>Recomendaciones nutricionales</li>
+                <li>Respuestas a todas tus preguntas</li>
+            </ul>
+        </div>
+
+        <a href="#" class="cta-button">Agendar una Cita</a>
+    </div>
+
+    <div class="testimonials">
+        <h3>Testimonios</h3>
+        <blockquote>
+            "Excelente atención y muy profesionales" - Juan Porras
+        </blockquote>
+        <blockquote>
+            "Siempre cuidan muy bien a mis mascotas" - Ana Gomez
+        </blockquote>
+    </div>
+
+    <div class="faq">
+        <h3>Preguntas Frecuentes</h3>
+        <p><strong>Q: ¿Cuánto dura una consulta general?</strong><br>
+           A: Aproximadamente 30 minutos.</p>
+        <p><strong>Q: ¿Qué debo llevar a la consulta?</strong><br>
+           A: Trae cualquier historial médico previo y una lista de preguntas que puedas tener.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 CareVet. Todos los derechos reservados.</p>
+    </div>
+
+</body>
+</html>

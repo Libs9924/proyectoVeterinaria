@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareVet - Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            background-color: #336699;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .header img {
+            width: 50px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            font-size: 24px;
+            vertical-align: middle;
+            margin: 0;
+        }
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .login-box {
+            background-color: #a1a1a1;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .login-box img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .login-box input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .login-box label {
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .login-box a {
+            color: #336699;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3d3d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #282828;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="imagenes/logo.png" alt="CareVet Logo">
+        <h1>CareVet</h1>
+    </div>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="imagenes/fotoDePerfil.png" alt="User Icon">
+            <form>
+                <input type="text" name="correo" placeholder="Correo" required>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <div>
+                    <input type="checkbox" name="recordar">
+                    <label for="recordar">Recordar</label>
+                </div>
+                <div>
+                    <a href="#">¿Olvidó la contraseña?</a><br>
+                    <a href="#">¿No tienes cuenta?</a>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareVet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3a506b;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3a506b;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .service {
+            background-color: #00a0dc;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            color: #000000;
+        }
+        .service img {
+            width: 50px;
+            height: 50px;
+        }
+        .welcome {
+            background-color: #6d8299;
+            color: #ffffff;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .contact {
+            background-color: #3a506b;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact input, .contact select, .contact textarea, .contact button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .contact button {
+            background-color: #6d8299;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #3a506b;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/logo.png" alt="CareVet Logo">
+    </header>
+
+    <nav>
+        <a href="#">Servicios</a>
+        <a href="#">Citas</a>
+        <a href="#">Perfil</a>
+        <a href="#">Contactos</a>
+    </nav>
+
+    <div class="main-content">
+        <img src="imagenes/cat and dog.png" alt="Cat and Dog">
+    </div>
+
+    <div class="services">
+        <div class="service">
+            <img src="imagenes/icon.png" alt="Service 1">
+            <p>SAN JUAN</p>
+            <p>De Ceviche del rey 400m al Este<br>Carretera vieja - San Juan</p>
+            <p>(+506) 2203 – 1876<br>(+506) 2278 – 1244</p>
+        </div>
+        <div class="service">
+            <img src="imagenes/icon.png" alt="Service 2">
+            <p>SAN JUAN</p>
+            <p>Del pali 400m al Este de<br>Carretera vieja Santa Ana - Escazú</p>
+            <p>(+506) 2203 – 1943<br>(+506) 2203 – 1944</p>
+        </div>
+    </div>
+
+    <div class="welcome">
+        ¡Bienvenidos a CAREVET!<br>Cuidamos a tus mascotas con amor y dedicación
+    </div>
+
+    <div class="contact">
+        <p>¿Requieres de alguna consulta?<br>Dejá tus datos y te llamaremos lo antes posible</p>
+        <input type="text" placeholder="Nombre*" required>
+        <input type="tel" placeholder="Teléfono*" required>
+        <select>
+            <option value="">Elije tu localidad</option>
+            <option value="sanjuan">San Juan</option>
+            <option value="escazu">Escazú</option>
+        </select>
+        <textarea placeholder="Escriba su consulta" rows="4"></textarea>
+        <button type="submit">Enviar</button>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 CareVet. Todos los derechos reservados.</p>
+    </div>
+
+</body>
+</html>
